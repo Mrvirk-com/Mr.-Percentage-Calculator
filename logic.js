@@ -29,6 +29,8 @@ function calculateX() {
   form.elements.x.value = x;
   if (x < 0) {
     form.elements.x.className = "result-negative"
+  } else {
+    form.elements.x.className = "result"
   }
   const output = document.getElementById("xOutput");
   output.innerHTML = "Result: " + p + "% of " + y + " is : " + "<b> <span>" + x + "</span></b>";
@@ -44,6 +46,8 @@ function calculatePercentage() {
   form.elements.p.value = p;
   if (p < 0) {
     form.elements.p.className = "result-negative"
+  } else {
+    form.elements.p.className = "result"
   }
   const output = document.getElementById("pOutput");
   output.innerHTML = "Result: " + x + " is <b> <span>" + p + "%</span></b> of " + y;
@@ -60,6 +64,8 @@ function calculateProfitLossPercentage() {
   form.elements.pl.value = pl + "%";
   if (pl < 0) {
     form.elements.pl.className = "result-negative"
+  } else {
+    form.elements.pl.className = "result"
   }
   const output = document.getElementById("plOutput");
   output.innerHTML = "Result: Profit/Loss % is <b> <span>" + pl + "%</span></b>";
