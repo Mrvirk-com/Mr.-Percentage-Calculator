@@ -47,7 +47,7 @@ button {
 div {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 5px;
+  padding: 2%;
   font-size: 18px;
 }
 
@@ -96,4 +96,58 @@ p.hint{
 .grid-parent {
   display: grid;
   grid-template-columns: 1fr 1fr
+}
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+
+  .parent, .child{
+    width:100%;
+  }
+  input[type=text], select {
+    width: 25%;
+  }
+
+  .menu a {
+    padding:4px;
+    margin-top:3.5px;
+    display:inline;
+    width:100%;
+
+  }
+
+  
 }
