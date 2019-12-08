@@ -28,7 +28,7 @@ function calculateX() {
   let y = form.elements.y.value;
 
   let x = (p * y) / 100;
-  form.elements.x.value = x;
+  form.elements.x.value = x.toFixed(2);
 
   if (x < 0) {
     form.elements.x.className = "result-negative"
@@ -47,7 +47,7 @@ function calculatePercentage() {
   let x = form.elements.x.value;
   let y = form.elements.y.value;
   let p = (x / y) * 100;
-  form.elements.p.value = p + "%";
+  form.elements.p.value = p.toFixed(2) + "%";
   if (p < 0) {
     form.elements.p.className = "result-negative"
   } else {
@@ -67,7 +67,7 @@ function calculateProfitLossPercentage() {
   let n = form.elements.n.value;
   let x = n - y;
   let pl = (x / y) * 100;
-  form.elements.pl.value = pl + "%";
+  form.elements.pl.value = pl.toFixed(2) + "%";
   if (pl < 0) {
     form.elements.pl.className = "result-negative"
   } else {
