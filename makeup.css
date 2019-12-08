@@ -1,11 +1,17 @@
 body {
   font-size: 18px;
 }
+input{
+font-size: 25px;
+}
+
+p{
+  font-size: 18px;
+}
 
 input[type=text], select {
   width: 15%;
   padding: 5px 10px;
-  font-size: 18px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -33,19 +39,29 @@ div {
   font-size: 18px;
 }
 
-textarea {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  max-width: 100%;
-}
-
 a {
   color: green;
 }
 
+.result{
+  color:green;
+  font-weight: bold;
+}
+
+.result-negative{
+  color:red;
+  font-weight: bold;
+}
+
+p.hint{
+  font-size: 15px;
+}
 .output {
-  font-size: 25px;
+  font-size: 15px;
+}
+
+.formula {
+  font-size: 15px;
 }
 
 .flex-parent {

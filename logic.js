@@ -1,17 +1,17 @@
 calculateX();
-inputForm.onsubmit = function(event) {
+inputForm.oninput = function(event) {
   event.preventDefault();
   calculateX();
 };
 
 calculatePercentage();
-inputForm2.onsubmit = function(event) {
+inputForm2.oninput = function(event) {
   event.preventDefault();
   calculatePercentage();
 };
 
 calculateProfitLossPercentage();
-inputForm3.onsubmit = function(event) {
+inputForm3.oninput = function(event) {
   event.preventDefault();
   calculateProfitLossPercentage();
 };
@@ -26,10 +26,12 @@ function calculateX() {
   let p = form.elements.p.value;
   let y = form.elements.y.value;
   let x = (p * y) / 100;
-
+  form.elements.x.value = x;
+  if (x < 0) {
+    form.elements.x.className = "result-negative"
+  }
   const output = document.getElementById("xOutput");
-  output.innerHTML = "Result: " + p + "% of " + y + " is : " + "<b> <span style='color:green'>" + x + "</span></b>";
-
+  output.innerHTML = "Result: " + p + "% of " + y + " is : " + "<b> <span>" + x + "</span></b>";
   const formula = document.getElementById("xFormula");
   formula.innerHTML = "Tips: Given, x = ?, p = " + p + ", y = " + y + ". Calculations, x = (p*y)/100 = (" + p + "*" + y + ")/100";
 }
@@ -39,27 +41,28 @@ function calculatePercentage() {
   let x = form.elements.x.value;
   let y = form.elements.y.value;
   let p = (x / y) * 100;
-
+  form.elements.p.value = p;
+  if (p < 0) {
+    form.elements.p.className = "result-negative"
+  }
   const output = document.getElementById("pOutput");
-  output.innerHTML = "Result: " + x + " is <b> <span style='color:green'>" + p + "%</span></b> of " + y;
-
+  output.innerHTML = "Result: " + x + " is <b> <span>" + p + "%</span></b> of " + y;
   const formula = document.getElementById("pFormula");
   formula.innerHTML = "Tips: Given, p = ?, x = " + x + " y = " + y + ". Calculations, p = (x/y)*100 = (" + x + "/" + y + ")*100";
-
 }
-
 
 function calculateProfitLossPercentage() {
   const form = document.forms.inputForm3;
-  let y = form.elements.a.value;
-  let n = form.elements.b.value;
+  let y = form.elements.y.value;
+  let n = form.elements.n.value;
   let x = n - y;
   let pl = (x / y) * 100;
-
+  form.elements.pl.value = pl + "%";
+  if (pl < 0) {
+    form.elements.pl.className = "result-negative"
+  }
   const output = document.getElementById("plOutput");
-  output.innerHTML = "Result: Profit/Loss % is <b> <span style='color:green'>" + pl + "%</span></b>";
-
+  output.innerHTML = "Result: Profit/Loss % is <b> <span>" + pl + "%</span></b>";
   const formula = document.getElementById("plFormula");
   formula.innerHTML = "Tips: Given, p/l = ?, x= ?, y = " + y + " n = " + n + ". Calculations, x = y-n, p/l = (" + x + "/" + y + ")*100";
-
 }
