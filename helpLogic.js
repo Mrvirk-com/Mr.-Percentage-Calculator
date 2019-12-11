@@ -57,7 +57,7 @@ function calculatePercentage() {
   const output = document.getElementById("pOutput");
   output.innerHTML = "Result: " + x + " is <b> <span>" + p + "%</span></b> of " + y;
   const formula = document.getElementById("pFormula");
-  formula.innerHTML = "Tips: Given, p = ?, x = " + x + " y = " + y + ". Calculations, p = (x/y)*100 = (" + x + "/" + y + ")*100";
+  formula.innerHTML = "Tips: Given, p = ?, x = " + x + ", y = " + y + ". Calculations, p = (x/y)*100 = (" + x + "/" + y + ")*100";
 
 }
 
