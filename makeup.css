@@ -26,30 +26,6 @@ input[type=text], select {
   background-color: #f2f2f2;
 }
 
-textarea {
-  width: 15%;
-  font-size: 25px;
-  padding: 5px 10px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
-}
-
-button {
-  width: 100%;
-  background-color: green;
-  border: 5px solid black;
-  box-sizing: border-box;
-  color: white;
-  font-size: 20px;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-}
-
 .logo {
   width: 30%;
   height: 10%;
@@ -61,11 +37,7 @@ div {
   font-size: 18px;
 }
 
-a {
-  color: green;
-}
-
-div.background {}
+a {color: green;}
 
 div.boxes {
   border: 0.5px solid black;
@@ -92,25 +64,6 @@ p.hint {
 
 .formula {
   font-size: 15px;
-}
-
-.flex-parent {
-  display: flex;
-}
-
-.flex-child {
-  flex: 1;
-}
-
-.parent {
-  background: #f2f2f2;
-}
-
-.child {}
-
-.grid-parent {
-  display: grid;
-  grid-template-columns: 1fr 1fr
 }
 
 * {
@@ -155,10 +108,6 @@ p.hint {
 
   /* For mobile phones: */
   .menu, .main, .right {
-    width: 100%;
-  }
-
-  .parent, .child {
     width: 100%;
   }
 
