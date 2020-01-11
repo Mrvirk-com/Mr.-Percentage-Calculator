@@ -5,7 +5,7 @@ body {
 }
 
 span {
-  color: green;
+  color: #009900;
 }
 
 input {
@@ -47,7 +47,8 @@ div {
   font-size: 18px;
 }
 
-a {color: green;}
+a {color: #009900;
+font-weight: bold;}
 
 div.boxes {
   border: 0.5px solid black;
@@ -55,7 +56,7 @@ div.boxes {
 }
 
 .result {
-  color: green;
+  color: #009900;
   font-weight: bold;
   font-size: 20px;
 }
@@ -125,7 +126,6 @@ p.hint {
 
   input{
     width: 100%;
-    font-size: 15px;
     padding: 5px 10px;
     margin: 8px 0;
     display: inline-block;
