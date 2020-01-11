@@ -7,12 +7,17 @@
 
 <url>
   <loc>https://percentage-calculator.mrvirk.com/</loc>
-  <lastmod>2019-12-26T02:28:16+00:00</lastmod>
+  <lastmod>2020-01-10T02:28:16+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://percentage-calculator.mrvirk.com/help.html</loc>
-  <lastmod>2019-12-26T02:28:25+00:00</lastmod>
+  <lastmod>2020-01-10T02:28:25+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://percentage-calculator.mrvirk.com/profit-loss-percentage-calculator.html</loc>
+  <lastmod>2020-01-10T02:28:25+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 </urlset>
