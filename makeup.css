@@ -10,20 +10,17 @@ span {
 
 input {
   font-size: 25px;
-}
-
-p {
-  font-size: 20px;
-}
-
-input[type=text], select {
-  width: 25%;
+  width: 100%;
   padding: 5px 10px;
   margin: 8px 0;
   display: inline-block;
   border: 0.5px solid black;
   box-sizing: border-box;
   background-color: #f2f2f2;
+}
+
+p {
+  font-size: 20px;
 }
 
 input[type=number], select {
@@ -58,13 +55,13 @@ div.boxes {
 .result {
   color: #009900;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .result-negative {
   color: red;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 p.hint {
