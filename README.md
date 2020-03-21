@@ -1,4 +1,4 @@
-# Percentage-Calculator
+# Mr. Percentage - Calculator
 Mr. Percentage is a percentage calculator that helps you calculate % percentage or calculate results based on %
 
 URL: https://mrvirk.com/percentage-calculator/
