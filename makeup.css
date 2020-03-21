@@ -47,8 +47,10 @@ div {
   font-size: 18px;
 }
 
-a {color: #FF4500;
-font-weight: bold;}
+a {
+  color: #FF4500;
+  font-weight: bold;
+}
 
 div.boxes {
   border: 0.5px solid black;
@@ -61,11 +63,12 @@ div.boxes {
   font-size: 25px;
 }
 
-.secondary_result{
+.secondary_result {
   color: purple;
   font-weight: bold;
   font-size: 25px;
 }
+
 .result-negative {
   color: red;
   font-weight: bold;
@@ -127,6 +130,7 @@ div.secondary_boxes {
   background-color: #e5e5e5;
   height: 265px;
 }
+
 .calculator_box {
   float: left;
   width: 50%;
@@ -144,14 +148,13 @@ div.secondary_boxes {
   /* For mobile phones: */
   .menu, .main, .right {
     width: 100%;
-
   }
 
   .calculator_box, .results_box {
     width: 100%;
   }
 
-  input{
+  input {
     width: 100%;
     padding: 5px 10px;
     margin: 8px 0;
