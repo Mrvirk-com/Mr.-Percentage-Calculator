@@ -1,3 +1,5 @@
+calculateX();
+calculatePercentage();
 inputForm.oninput = function(event) {
   event.preventDefault();
   calculateX();
