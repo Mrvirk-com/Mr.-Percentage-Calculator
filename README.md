@@ -3,6 +3,10 @@ Mr. Percentage is a percentage calculator that helps you calculate % percentage 
 
 URL: https://mrvirk.com/percentage-calculator/
 
-Feel free to contribute to the project, by making a pull request.
+# Collobration and Contributions 
+Feel free to make contributions by making a pull request.
 
-And if you would like to use code in one of your projects, contact at: navjot @ mrvirk.com
+If you would like to use project code in one of your projects contact me at: navjot @ mrvirk.com
+
+# Copyrights
+Navjot Virk - https://navjot.mrvirk.com
