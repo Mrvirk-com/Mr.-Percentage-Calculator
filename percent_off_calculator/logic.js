@@ -49,10 +49,21 @@ function calculate_savings_on_fixed_price_off() {
     product_price= 0;
   }
   let savings_percent= (fixed_off / product_price) * 100;
-  form.elements.savings_percent.value = savings_percent.toFixed(2)+" %";
+  if (savings_percent > 0 && savings_percent != Infinity) {
+    form.elements.savings_percent.value = savings_percent.toFixed(2)+" %";
+    
+  }else{
+    form.elements.savings_percent.value = 0;
+  }
+  
 
   let discounted_price = product_price - fixed_off;
-  form.elements.discounted_price.value = discounted_price;
+  if (discounted_price > -1) {
+    form.elements.discounted_price.value = discounted_price;
+    
+  }else{
+    form.elements.savings_percent.value = 0;
+  }
 
   if (savings_percent< 0) {
     form.elements.savings_percent.className = "result-negative"
